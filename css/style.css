@@ -1,0 +1,45 @@
+html{
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+/* 
+----------navigation 
+*/
+
+.navigation {
+    background-color: rgb(46, 44, 44);
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .logo {
+    background-color: rgba(10, 9, 9, .5) 
+}
+
+.navigation a{
+    color: white;
+}
+
+.navigation a:hover {
+    opacity: .8;
+}
+
+.navigation .nav__right , .navigation .nav__left {
+    display: flex;
+    
+}
+
+.navigation .nav__right li , .navigation .nav__left li {
+    list-style: none;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+}
+
+.navigation li:hover {
+    background-color: royalblue;
+    border-radius: 10px;
+}
