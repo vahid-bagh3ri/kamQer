@@ -43,3 +43,111 @@ a {
     background-color: royalblue;
     border-radius: 10px;
 }
+
+
+/* 
+---------head section
+*/
+
+.head-section {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.head-section .head__right , .head-section head__left {
+    display: flex;
+    align-items: center;
+}
+
+
+/* 
+---------- dropdown button
+*/
+.sh-dropdown-wrapper {
+    display: flex;
+}
+
+.sh-dropdown-trigger {
+    background-color: royalblue;
+    border-radius: 4px;
+    padding: 1.3rem;
+    color: white;
+}
+
+/* 
+--------- searchbox
+*/
+
+.search .formgroup {
+    margin-right: 1.6rem;
+    display: flex;
+}
+
+.search input{
+    background-color:  rgba(47, 83, 83, 0.2);
+    border: none;
+    color: rgb(114, 109, 109);
+    font-size: 2rem;
+    outline: none;
+    display: flex;
+    padding: 1.25rem;
+    width: 30rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.search input::placeholder {
+    color: rgb(114, 109, 109);
+    font-size: 2rem;
+    display: flex;
+    
+}
+
+.search button {
+    background-color: #a5a5a5;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border: none;
+    outline: none;
+
+}
+
+.search button i {
+    font-size: 2.3rem;
+    padding: .8rem ;
+    color: whitesmoke;
+}
+
+/* 
+--------- cart button
+*/
+
+.cart {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    background-color: turquoise;
+    border-radius: 3px;
+    color: white;
+}
+
+.cart i{
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, .2);
+    margin-left: 1rem;
+}
+
+.cart span{
+    font-size: 1.6rem;
+    margin: 0.8rem;
+    padding: 5px 8px 3px;
+    border-radius: 50%;
+    background-color:  rgba(255, 255, 255, .2);
+
+}
