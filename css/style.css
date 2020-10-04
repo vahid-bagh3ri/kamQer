@@ -1,6 +1,8 @@
 html{
+    font-family: IRANSans;
     font-size: 62.5%;
 }
+
 
 a {
     text-decoration: none;
@@ -36,7 +38,7 @@ a {
 .navigation .nav__right li , .navigation .nav__left li {
     list-style: none;
     padding: 1.2rem 2rem;
-    font-size: 2rem;
+    font-size: 1.4rem;
 }
 
 .navigation li:hover {
