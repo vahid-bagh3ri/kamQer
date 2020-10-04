@@ -9,6 +9,21 @@ a {
     
 }
 
+.btn{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-family: inherit;
+}
+
+.btn__green {
+    background-color: rgb(143, 248, 236);
+}
+
+.btn__green:hover{
+    background-color: rgb(105, 189, 180);
+}
+
 /* 
 ----------navigation 
 */
@@ -28,6 +43,7 @@ a {
 
 .navigation a:hover {
     opacity: .8;
+    
 }
 
 .navigation .nav__right , .navigation .nav__left {
@@ -40,6 +56,7 @@ a {
     padding: 1.2rem 2rem;
     font-size: 1.4rem;
 }
+
 
 .navigation li:hover {
     background-color: royalblue;
@@ -94,10 +111,9 @@ a {
     background-color:  rgba(47, 83, 83, 0.2);
     border: none;
     color: rgb(114, 109, 109);
-    font-size: 2rem;
+    font-size: 1.4rem;
     outline: none;
     display: flex;
-    padding: 1.25rem;
     width: 30rem;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
@@ -153,3 +169,45 @@ a {
     background-color:  rgba(255, 255, 255, .2);
 
 }
+
+/* 
+------------slider special suggest
+*/
+
+.special-suggest__item{
+    background: url(/img/img.png) no-repeat 50% 50%;
+    height: 250px;
+    z-index: 0;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.special-suggest__item-info {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 12rem;
+}
+
+.special-suggest__item-info a{
+    color: white;
+}
+
+.special-suggest__item-section { 
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    padding: 15px 20px;
+    font-weight: 400px;
+    font-size: 1.8rem;
+    border-radius: 4px;
+
+}
+
+.special-suggest__item-title {
+
+    margin-left: 10rem;
+}
+
