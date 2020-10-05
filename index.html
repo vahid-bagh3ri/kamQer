@@ -101,13 +101,145 @@
       </div>
     </header>
 
+    <section id="main">
+        <div class="product-section row">
+          <div class="product-section__head">
+            <h3 class="product-section__head-title">پیشنهادات ویژه</h3>
+            <span>
+              <a href="#">مشاهده لیست کامل</a>
+            </span>
+          </div>
+          <section id="product-special-suggest" class=" product-section__content" >
+            <article class="product-section__content-box" >
+              <a href="#" class="product__image">
+                <img src="/img/img2.jpg" alt="محصولات">
+              </a>
+              <div class="product__info">
+                <a href="#">هارد دیسک اکسترنال ...</a>
+                <span class="product__discount">۶۰،۰۰۰ تومان</span>
+                <span class="product__original">۵۰،۰۰۰ تومان</span>
+              </div>
+            </article>
+            <article class="product-section__content-box" >
+              <a href="#" class="product__image">
+                <img src="/img/img2.jpg" alt="محصولات">
+              </a>
+              <div class="product__info">
+                <a href="#">هارد دیسک اکسترنال ...</a>
+                <span class="product__discount">۶۰،۰۰۰ تومان</span>
+                <span class="product__original">۵۰،۰۰۰ تومان</span>
+              </div>
+            </article>
+            <article class="product-section__content-box" >
+              <a href="#" class="product__image">
+                <img src="/img/img2.jpg" alt="محصولات">
+              </a>
+              <div class="product__info">
+                <a href="#">هارد دیسک اکسترنال ...</a>
+                <span class="product__discount">۶۰،۰۰۰ تومان</span>
+                <span class="product__original">۵۰،۰۰۰ تومان</span>
+              </div>
+            </article>
+            <article class="product-section__content-box" >
+              <a href="#" class="product__image">
+                <img src="/img/img2.jpg" alt="محصولات">
+              </a>
+              <div class="product__info">
+                <a href="#">هارد دیسک اکسترنال ...</a>
+                <span class="product__discount">۶۰،۰۰۰ تومان</span>
+                <span class="product__original">۵۰،۰۰۰ تومان</span>
+              </div>
+            </article>
+            <article class="product-section__content-box" >
+              <a href="#" class="product__image">
+                <img src="/img/img2.jpg" alt="محصولات">
+              </a>
+              <div class="product__info">
+                <a href="#">هارد دیسک اکسترنال ...</a>
+                <span class="product__discount">۶۰،۰۰۰ تومان</span>
+                <span class="product__original">۵۰،۰۰۰ تومان</span>
+              </div>
+            </article>
+            <article class="product-section__content-box" >
+              <a href="#" class="product__image">
+                <img src="/img/img2.jpg" alt="محصولات">
+              </a>
+              <div class="product__info">
+                <a href="#">هارد دیسک اکسترنال ...</a>
+                <span class="product__discount">۶۰،۰۰۰ تومان</span>
+                <span class="product__original">۵۰،۰۰۰ تومان</span>
+              </div>
+            </article>
+          </section>
+        </div>
+
+    </section>
+
+
 
     <script src="js/jquery-1.9.1.min.js"></script>
     <script  src="js/owl.carousel.min.js"></script>
     <script type="text/javascript">
         var SliderSS = $('#slider-ss');
+        var SpecialSuggest = $('#product-special-suggest');
+
+        SpecialSuggest.owlCarousel({
+          rtl: true,
+          margin: 10,
+          dots: false,
+          responsive : {
+            0: {
+              items:3
+            },
+
+            600: {
+              items:3
+            },
+            1000: {
+              items:4
+            },
+            1200: {
+              items:6
+            }
+
+          }
+
+        });
+
+              //         var SpecialSuggest = $('#product-special-suggest');
+              //         SpecialSuggest.owlCarousel({
+              //     loop:true,
+              //     nav:true,
+              //     margin:10,
+              //     responsive:{
+              //         0:{
+              //             items:1
+              //         },
+              //         600:{
+              //             items:3
+              //         },            
+              //         960:{
+              //             items:5
+              //         },
+              //         1200:{
+              //             items:6
+              //         }
+              //     }
+              // });
+              // SpecialSuggest.on('mousewheel', '.owl-stage', function (e) {
+              //     if (e.deltaY>0) {
+              //       SpecialSuggest.trigger('next.owl');
+              //     } else {
+              //       SpecialSuggest.trigger('prev.owl');
+              //     }
+              //     e.preventDefault();
+              // });
+
+
+
 
         SliderSS.owlCarousel({
+        
             rtl:true,
             items:1,
             loop:true,
