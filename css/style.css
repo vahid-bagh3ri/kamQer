@@ -30,7 +30,7 @@ a {
 }
 
 /* 
-----------navigation 
+-----------------------------------------navigation 
 */
 
 .navigation {
@@ -70,7 +70,7 @@ a {
 
 
 /* 
----------head section
+-----------------------------------------head section
 */
 
 .head-section {
@@ -90,7 +90,7 @@ a {
 
 
 /* 
----------- dropdown button
+-----------------------------------------dropdown button
 */
 .sh-dropdown-wrapper {
     display: flex;
@@ -104,7 +104,7 @@ a {
 }
 
 /* 
---------- searchbox
+-----------------------------------------searchbox
 */
 
 .search .formgroup {
@@ -147,7 +147,7 @@ a {
 }
 
 /* 
---------- cart button
+-----------------------------------------cart button
 */
 
 .cart {
@@ -176,8 +176,9 @@ a {
 }
 
 /* 
-------------slider special suggest
+-----------------------------------------slider special suggest
 */
+
 
 .special-suggest__item{
 
@@ -216,9 +217,15 @@ a {
     margin-left: 10rem;
 }
 
+
+
 @media only screen and (max-width: 767px )  {
     .navigation .nav__left , .search{
         display: none;
+    }
+    .special-suggest__item-info{
+
+        margin-right: 4rem;
     }
 
 
@@ -242,20 +249,25 @@ a {
 }
 
 
-@media only screen and (max-width: 400px ) {
+@media only screen and (max-width: 420px ) {
+
 
     .special-suggest__item-info{
 
         margin-right: 1rem;
+        width: 1000%;
+        
         
     }
+    .special-suggest__item-title {
 
-
+        margin-left: 5rem;
+    }
     
 }
 
 /* 
------------product-section
+-----------------------------------------product-section
 */
 
 .product-section{
@@ -293,7 +305,7 @@ a {
 }
 
 .product-section__content-box .product__image{
-    height: 250px;
+    height: 290px;
     display: flex;
     border: 1px solid rgba(0, 0, 0, .1);
     justify-content: center;
@@ -333,5 +345,23 @@ a {
     margin-top: 1rem;
     font-weight: 400px;
     font-size: 2rem;
+    
+}
+
+/* 
+----------------------------------------- banner box
+*/
+
+.banner-box__section {
+    display: flex;
+    justify-content: center;
+
 
 }
+
+
+/* 
+pourya mehdizade
+amirhossein hosseinzade
+alireza barzegar(asshole) */
+
