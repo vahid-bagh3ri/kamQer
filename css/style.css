@@ -211,3 +211,40 @@ a {
     margin-left: 10rem;
 }
 
+@media only screen and (max-width: 767px )  {
+    .navigation .nav__left , .search{
+        display: none;
+    }
+
+
+
+}
+
+
+@media only screen and (max-width: 500px )  {
+
+    .nav__right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .special-suggest__item-info{
+
+        margin-right: 3.5rem;
+        
+    }
+
+}
+
+
+@media only screen and (max-width: 400px ) {
+
+    .special-suggest__item-info{
+
+        margin-right: 1rem;
+        
+    }
+
+
+    
+}
