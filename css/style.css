@@ -175,10 +175,10 @@ a {
 */
 
 .special-suggest__item{
-    background: url(/img/img.png) no-repeat 50% 50%;
+
     height: 250px;
     z-index: 0;
-    background-size: cover;
+    background-size: cover !important;
     display: flex;
     align-items: center;
 }
