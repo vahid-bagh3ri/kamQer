@@ -1,5 +1,5 @@
 html{
-    /* font-family: IRANSans; */
+    font-family: IRANSans;
     font-size: 62.5%;
 }
 
@@ -272,35 +272,83 @@ a {
 
 .product-section{
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
-.product-section__head{
+.product-section__head , .product-section__head-center{
     display: flex;
     margin-top: 3.5rem;
     align-items: center;
 
 }
-.product-section__head a {
+
+.product-section__head-center{
+    flex-direction: column;
+    
+}
+.product-section__head a , .product-section__nav span a{
     font-size: 1.6rem;
     border-bottom: 1px solid rgba(77, 77, 77, .8);
 
 }
 
-.product-section__head a:hover {
+.product-section__head a:hover , .product-section__nav span a:hover {
     border: none;
 }
 
 
-    .product-section__head-title{
+    .product-section__head-title , .product-section__head-title-center{
         margin-left: 2rem;
         font-size: 2.3rem;
         font-weight: bold;
         color: #4d4d4d;
     }
 
+    .product-section__head-title__center{
+        margin-left: 0px;
+        border-bottom: 1px solid rgba(0, 0, 0, .4);
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+
+    }
+
+    .product-section__head-desctiption {
+        width: 80%;
+        text-align: center;
+        line-height: 1.8;
+        font-size: 1.6rem;
+    }
+
+    .product-section__nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .product-section__nav-btn button{
+        border: none;
+        outline: none;
+        background: #efefef;
+        padding: 5px 10px;
+        border-radius: 5px;
+        
+
+    }
+    .product-section__nav-btn button i{
+        font-size: 2.3rem;
+        color: rgba(77, 77, 77, .8);
+        
+    }
+
+    .product-section__nav-btn button i:hover{
+        opacity: .5;
+        cursor: pointer;
+        
+    }
+
 .product-section__content {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
 
 }
 
@@ -368,8 +416,9 @@ a {
 }
 
 
-.banner-box__section a{
-    
+.banner-box__section a:last-child{
+    margin-left: 0px;
+
 }
 
 

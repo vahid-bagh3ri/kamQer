@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -205,16 +206,37 @@
         </div>
           
         <div class="product-section row">
-          <div class="product-section__head-center">
+          <div class="product-section__head__center">
             <h3 class="product-section__head-title">پرفروش ترین ها</h3>
-            <div class="product-section__head-desctiptoon">
+            <div class="product-section__head-desctiption">
               در این قست پرفروش ترین محصولاتی که توسط کاربران خریداری شده از تمام دسته بندی های سایت در لیست زیر قرار گرفته شده و همیشه بروز میشود.
             </div>
-            <!-- <span>
-              <a href="#">مشاهده لیست کامل</a>
-            </span> -->
           </div>
-          <section id="product-special-suggest" class=" product-section__content" >
+            <div class="product-section__nav">
+              <div class="product-section__nav-btn">
+                <button class="next" id="best-sellers__next">
+                  <i class="fas fa-angle-right"></i>
+                </button>
+                <button class="prev" id="best-sellers__prev">
+                  <i class="fas fa-angle-left"></i>
+                </button>
+              </div>
+                <span>
+                  <a href="#">مشاهده لیست کامل</a>
+                </span> 
+            </div>
+          </div>
+          <section id="best-sellers" class=" product-section__content" >
+            <article class="product-section__content-box" >
+              <a href="#" class="product__image">
+                <img src="/img/img2.jpg" alt="محصولات">
+              </a>
+              <div class="product__info">
+                <a href="#">هارد دیسک اکسترنال ...</a>
+                <span class="product__discount">۶۰،۰۰۰ تومان</span>
+                <span class="product__original">۵۰،۰۰۰ تومان</span>
+              </div>
+            </article>
             <article class="product-section__content-box" >
               <a href="#" class="product__image">
                 <img src="/img/img2.jpg" alt="محصولات">
@@ -277,11 +299,6 @@
             </article>
           </section>
         </div>
-        <div class="product-section__nav">
-          <div class="product-section__nav-btn">
-            <button class="next" id="best-sellers__next"></button>
-          </div>
-        </div>
     </section>
 
 
@@ -291,8 +308,9 @@
     <script type="text/javascript">
         var SliderSS = $('#slider-ss');
         var SpecialSuggest = $('#product-special-suggest');
+        var BestSeller = $('#best-sellers');
+        var owlObject = {
 
-        SpecialSuggest.owlCarousel({
           rtl: true,
           margin: 10,
           dots: false,
@@ -312,8 +330,9 @@
             }
 
           }
-
-        });
+        }
+        BestSeller.owlCarousel(owlObject);
+        SpecialSuggest.owlCarousel(owlObject);
 
               //         var SpecialSuggest = $('#product-special-suggest');
               //         SpecialSuggest.owlCarousel({
@@ -356,6 +375,13 @@
             autoplayTimeout:3000,
             autoplayHoverPause:true
         }); 
+
+        $('#best-sellers__next').click(function() {
+          BestSeller.trigger('next.owl.carousel')
+        });
+        $('#best-sellers__prev').click(function() {
+          BestSeller.trigger('prev.owl.carousel')
+        });
     </script>
 </body>
 </html>
