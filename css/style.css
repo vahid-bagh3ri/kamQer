@@ -356,12 +356,21 @@ a {
     display: flex;
     justify-content: center;
 
+}
 
+.banner-box__section img{
+    width: 100%;
+}
+
+.banner-box__section a{
+
+    margin-left: 10px;
 }
 
 
-/* 
-pourya mehdizade
-amirhossein hosseinzade
-alireza barzegar(asshole) */
+.banner-box__section a{
+    
+}
+
+
 
