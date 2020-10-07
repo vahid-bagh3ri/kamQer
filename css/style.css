@@ -53,6 +53,9 @@ a {
 
 .navigation .nav__right , .navigation .nav__left {
     display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-right: 0px;
     
 }
 
