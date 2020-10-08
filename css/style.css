@@ -254,6 +254,7 @@ a {
     .product-section__head-title , .product-section__head-title-center{
         margin-left: 2rem;
         font-size: 2.3rem;
+        letter-spacing: -1px;
         font-weight: bold;
         color: #4d4d4d;
     }
@@ -472,6 +473,7 @@ a {
 /* 
 -----------------------------------------   footer section
 */
+
 .footer{
     background-color: #49484b;
     color: white;
@@ -491,7 +493,10 @@ a {
     display: flex;
     flex-direction: column;
     flex-basis: 33.33%;
+    font-size: 1.4rem;
 }
+
+
 
 .newsletter{
     flex-basis: 50%;
@@ -524,6 +529,7 @@ a {
     -ms-align-items: center;
     align-items: center;
     margin-top: 2rem;
+    font-size: 1.4rem;
 }
 .newsletter input{
     flex-basis: 50%;
@@ -535,6 +541,7 @@ a {
     outline: none;
     border-radius: 4px;
     font-family: IRANSans;
+    font-size: 1.4rem;
 
 }
 
@@ -543,6 +550,7 @@ a {
     color: white;
     margin-right: 10px;
     cursor: pointer;
+    font-size: 1.4rem;
 }
 
 .newsletter button:hover{
@@ -555,9 +563,7 @@ a {
     margin-left: 0px;
 }
 
-.more-info-site span{
-    
-}
+
 .more-info-site span:last-child{
     direction: ltr;
 }
@@ -589,11 +595,14 @@ a {
     flex-basis: 70%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    
 }
 
 .more-info-site__section-left i{
     font-size: 3rem;
     margin: 10px;
+    font-size: 3.6rem;
 }
 
 
@@ -604,7 +613,28 @@ a {
 /* 
 -----------------------------------------    Media (responsive)
 */
+@media only screen and (max-width: 1200px )  {
+    .footer{
+        flex-wrap: wrap;
+    }
 
+    .customer-service , .newsletter{
+        flex: 50%;
+        
+    }
+
+    .newsletter hr {
+        margin-left: 0;
+    }
+
+    .newsletter p {
+        margin-left: 5%;
+    }
+
+    .more-info-site{
+        flex-grow: 1;
+    }
+    }
 
 @media only screen and (max-width: 767px )  {
     .navigation .nav__left , .search{
@@ -624,7 +654,18 @@ a {
 
     }
 
-
+    .footer hr {
+        margin-left: 0;
+    }
+    .customer-service  , .newsletter  , .more-info-site{
+        flex-grow: 1;
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        
+    } 
+    .newsletter p {
+        margin-left: 0;
+    }
 }
 
 
@@ -643,6 +684,9 @@ a {
 
     .comment-box{
         flex-basis: 100%;
+    }
+    .special-suggest .owl-controls {
+        right: 40%;
     }
 
 }
@@ -664,3 +708,5 @@ a {
     }
     
 }
+
+

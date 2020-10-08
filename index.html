@@ -426,7 +426,7 @@
       </div>
   </section>
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="customer-service">
       <h3>خدمات مشتری</h3><hr>
       <a href="#" class="customer-service__item">پاسخ به پرسش های متداول</a>
@@ -443,9 +443,7 @@
         <input type="text" placeholder="آدرس ایمیل شما">
         <button type="submit"  >ثبت ایمیل</button>
       </form>
-
     </div>
-
     <div class="more-info-site">
       <div class="more-info-site__head">
         <h3>اطلاعات وحیدکالا</h3>
@@ -472,60 +470,9 @@
             <i class="fa fa-facebook-square"></i>
           </a>
         </div>
-
       </div>
-
     </div>
-  </footer> -->
-
-  <footer class="footer">
-    <div class="customer-service">
-      <h3>خدمات مشتریان</h3>
-      <hr>
-      <a href="#" class="customer-service__item">پاسخ به پرسش های متداول</a>
-      <a href="#" class="customer-service__item">رویه های بازگرداندن کالا</a>
-      <a href="#" class="customer-service__item">شرایط استفاده</a>
-      <a href="#" class="customer-service__item">حریم خصوصی</a>
-    </div>
-    <div class="newsletter">
-      <h3>ثبت نام در خبرنامه شاپین</h3>
-      <hr>
-      <p>با ثبت نام در خبرنامه شاپین ، اولین نفری باشید که از جدیدترین محصولات، جشنواره ها و فروش‌های ویژه ما مطلع می شوید.</p>
-      <form action="#">
-        <input type="text" placeholder="آدرس ایمیل شما">
-        <button type="submit">ثبت ایمیل</button>
-      </form>
-    </div>
-    <div class="more-info-site">
-      <div class="more-info-site__head">
-        <h3>اطلاعات شاپین</h3>
-        <span>پشتیبانی</span>
-        <span>(۰۱۱) ۳۳۳۳۳۳۳۳</span>
-      </div>
-      <hr>
-      <div class="more-info-site__section">
-        <div class="more-info-site__section-right">
-          <a href="#">تماس با ما</a>
-          <a href="#">درباره ما</a>
-        </div>
-        <div class="more-info-site__section-left">
-          <a href="#">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-telegram"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-twitter-square"></i>
-          </a>
-          <a href="#">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </footer>
+  </footer> 
 
 
     <script src="js/jquery-1.9.1.min.js"></script>
@@ -556,40 +503,10 @@
             }
 
           }
-        }
+        };
         BestSeller.owlCarousel(owlObject);
         SpecialSuggest.owlCarousel(owlObject);
         NewProduct.owlCarousel(owlObject);
-
-              //         var SpecialSuggest = $('#product-special-suggest');
-              //         SpecialSuggest.owlCarousel({
-              //     loop:true,
-              //     nav:true,
-              //     margin:10,
-              //     responsive:{
-              //         0:{
-              //             items:1
-              //         },
-              //         600:{
-              //             items:3
-              //         },            
-              //         960:{
-              //             items:5
-              //         },
-              //         1200:{
-              //             items:6
-              //         }
-              //     }
-              // });
-              // SpecialSuggest.on('mousewheel', '.owl-stage', function (e) {
-              //     if (e.deltaY>0) {
-              //       SpecialSuggest.trigger('next.owl');
-              //     } else {
-              //       SpecialSuggest.trigger('prev.owl');
-              //     }
-              //     e.preventDefault();
-              // });
-
 
 
 
@@ -601,20 +518,20 @@
             autoplay:true,
             autoplayTimeout:3000,
             autoplayHoverPause:true
-        }); 
+        });
 
         $('#best-sellers__next').click(function() {
-          BestSeller.trigger('next.owl.carousel')
+          BestSeller.trigger('next.owl.carousel');
         });
         $('#best-sellers__prev').click(function() {
-          BestSeller.trigger('prev.owl.carousel')
+          BestSeller.trigger('prev.owl.carousel');
         });
 
         $('#new-product__next').click(function() {
-          NewProduct.trigger('next.owl.carousel')
+          NewProduct.trigger('next.owl.carousel');
         });
         $('#new-product__prev').click(function() {
-          NewProduct.trigger('prev.owl.carousel')
+          NewProduct.trigger('prev.owl.carousel');
         });
     </script>
 </body>
